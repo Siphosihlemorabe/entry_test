@@ -78,10 +78,11 @@
 
 **Show self-directed learning:**
 - Documentation consulted
+
 - Tutorials followed
 - Community resources
 
-[List 3-5 resources you used]
+[https://docs.soliditylang.org/,https://www.ibm.com/topics/what-is-blockchain,(https://docs.soliditylang.org/]
 
 ---
 
@@ -89,10 +90,11 @@
 
 **Problem-solving evidence:**
 - Biggest technical challenge
+
 - How you solved it
 - What you learned
 
-[Write down your challenges]
+[creating worker id and gig id. i solved by reading official docs. i was also struggling with emitting events and found out i needed to create the event before i can emit the even. ]
 
 ---
 
@@ -103,6 +105,6 @@
 - Testing frameworks
 - Frontend integration
 
-[Write your future learning goals]
+[i need to learn more on solidity concepts such as how to deploy smart contract to a test net, how to write a smart contract myslef as my knowledge is still much of a beginner and it takes time to solve a problem even with docs]
 
 ---
