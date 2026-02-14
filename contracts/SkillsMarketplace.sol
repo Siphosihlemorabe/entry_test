@@ -10,6 +10,15 @@ contract SkillsMarketplace {
     
     // TODO: Define your state variables here
     // Consider:
+    event GigPosted(
+    uint indexed gigId,
+    address indexed employer,
+    string description,
+    string skillRequired,
+    uint bounty
+);
+    event WorkerRegistered(address indexed worker, string skill);
+    event GigPosted ();
     // - How will you track workers and their skills?
      mapping(uint => mapping(uint => string)) skills;
     // - How will you store gig information?
