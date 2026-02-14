@@ -80,6 +80,7 @@ contract SkillsMarketplace {
     // - Emit an event
     function applyForGig(uint256 gigId) public {
         // Your implementation here
+        
     }
     
     // TODO: Implement submitWork function

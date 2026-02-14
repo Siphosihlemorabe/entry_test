@@ -54,15 +54,15 @@ A farmer wants to list 50 bags of maize. Gas costs are:
 - **C)** They cost exactly the same  
 - **D)** ERC-1155 is cheaper by approximately $54  
 
-**Your Answer:** [A/B/C/D]  
+**Your Answer:** [D]  
 
 **Your Calculation/Reasoning:**  
-- ERC-721 cost = [Show calculation][]
-- ERC-1155 cost = [Show calculation][0.1549=464.7]
+- ERC-721 cost = [Show calculation]
+- ERC-1155 cost = [Show calculation]
 - Difference = [Show calculation]
 
 
-[gas optimization helps reduce the price to process transactions in the blockchain. ]  
+[gas optimization helps reduce the price of gas which makes the processing fee lower. ]  
 
 ---
 
@@ -104,13 +104,16 @@ A farmer asks: *"Why can't we just use a normal website with a database?"*
 - **C)** The liquidity provider experiences impermanent loss because the pool maintains a constant product rather than constant ratio. ERC-721 would be more suitable than ERC-1155 for the NFT marketplace since individual NFTs require unique transactions.  
 - **D)** The constant product formula prevents any impermanent loss by automatically rebalancing. DAOs cannot implement financial protections due to smart contract immutability. ERC-1155 tokens are incompatible with standard DEX protocols.  
 
-**Your Answer:** [A/B/C/D]  
+**Your Answer:** [B]  
 
 **Your Reasoning:**  
 
-- **AMM Mathematics:** How do you calculate the swap output? What happens to the liquidity provider's value?  
+- **AMM Mathematics:** How do you calculate the swap output? What happens to the liquidity provider's value? 
+ constant product formula: x × y = k
 - **DeFi Governance:** What is impermanent loss and how does protection work?  
-- **Token Standards:** Why might ERC-1155 be preferred over ERC-721 for marketplace integration?  
+
+- **Token Standards:** Why might ERC-1155 be preferred over ERC-721 for marketplace integration?   
+   ERC-1155's batch transfer capability makes it more gas-efficient than ERC-721 for marketplace integration.  
 
 [2–3 sentences synthesising these concepts into a coherent explanation]  
 
