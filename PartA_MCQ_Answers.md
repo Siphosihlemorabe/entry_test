@@ -29,10 +29,11 @@
 - **C)** Use ERC-721 exclusively, store all data off-chain for gas savings, and require buyers to use MetaMask with manual price negotiations.  
 - **D)** Build everything as separate NFT collections with no DEX integration since farmers won't understand DeFi protocols.  
 
-**Your Answer:** [A/B/C/D]  
+**Your Answer:** [B]  
 
-**Your Reasoning:**  
-[2–3 sentences explaining why you chose this answer. What makes it the best choice?]  
+
+**Your Reasoning:**    
+[it is the best choice as this reduces middleman and allows the farmer to sell in baches which is how they normally would sell. it also uses on chain for reputation which helps in making sure everything is recorded and it is fast as lookups are constant]
 
 ---
 
@@ -56,12 +57,12 @@ A farmer wants to list 50 bags of maize. Gas costs are:
 **Your Answer:** [A/B/C/D]  
 
 **Your Calculation/Reasoning:**  
-- ERC-721 cost = [Show calculation]
-- ERC-1155 cost = [Show calculation]
+- ERC-721 cost = [Show calculation][]
+- ERC-1155 cost = [Show calculation][0.1549=464.7]
 - Difference = [Show calculation]
 
 
-[Explain why gas optimisation matters for African users]  
+[gas optimization helps reduce the price to process transactions in the blockchain. ]  
 
 ---
 
@@ -79,7 +80,6 @@ A farmer asks: *"Why can't we just use a normal website with a database?"*
 **Your Answer:** [B]  
 
 **Your Explanation:**  
-[2–3 sentences explaining what makes this answer correct. What did you learn about why blockchain matters in Africa?]
 [blockchain helps avoid price manipulation where middleman tasked wit selling on behalf of the farmer and or business may lie about the price he or she sells the product at which cuts the farmers profit, blockchain avoids that by helping the farmer know how much is every transatctions and its immutable proof ]  
 
 ---

@@ -14,7 +14,7 @@
 - How did you structure your state variables in `SkillsMarketplace` vs `SecureLottery`?
 - What trade-offs did you consider for storage efficiency?
 
-[Write your response here]
+[i would use mapping when i want to store key value pairs and array when i want to store different types of data]
 
 ---
 

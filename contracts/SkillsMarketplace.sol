@@ -11,8 +11,19 @@ contract SkillsMarketplace {
     // TODO: Define your state variables here
     // Consider:
     // - How will you track workers and their skills?
+     mapping(uint => mapping(uint => string)) skills;
     // - How will you store gig information?
+    struct Gig {
+        uint id;
+        string description;
+        string skillRequired;
+        uint bounty;
+        address employer;
+        address worker;
+        bool isCompleted;
+    }
     // - How will you manage payments?
+    mapping(uint => Gig) public gigs;
     
     address public owner;
     
@@ -21,12 +32,20 @@ contract SkillsMarketplace {
     }
     
     // TODO: Implement registerWorker function
+    
     // Requirements:
     // - Workers should be able to register with their skill
+    
     // - Prevent duplicate registrations
     // - Emit an event when a worker registers
     function registerWorker(string memory skill) public {
         // Your implementation here
+         uint workerId = uint(keccak256(abi.encodePacked(msg.sender, skill)));
+        require(bytes(skills[workerId][0]).length == 0, "Worker already registered with this skill");
+        skills[workerId][0] = skill;
+        emit WorkerRegistered(msg.sender, skill);
+            
+     
     }
     
     // TODO: Implement postGig function
@@ -37,6 +56,10 @@ contract SkillsMarketplace {
     // - Emit an event when gig is posted
     function postGig(string memory description, string memory skillRequired) public payable {
         // Your implementation here
+        require(msg.value > 0, "Bounty must be greater than 0");
+        uint gigId = uint(keccak256(abi.encodePacked(msg.sender, description, skillRequired, block.timestamp)));
+        gigs[gigId] = Gig(gigId, description, skillRequired, msg.value, msg.sender, address(0), false);
+        emit GigPosted(gigId, msg.sender, description, skillRequired, msg.value);
         // Think: How do you safely hold the ETH until work is approved?
     }
     
